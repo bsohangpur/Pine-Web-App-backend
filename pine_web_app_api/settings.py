@@ -63,21 +63,6 @@ WSGI_APPLICATION = 'pine_web_app_api.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-# hostinger MySql
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'u873607180_Pine_database',
-#         'USER': 'u873607180_PineMedical',
-#         'PASSWORD': 'PineMedical@2023',
-#         'HOST': 'www.pinemedical.in',
-#         'PORT': '3306',
-#         'OPTIONS': {
-#             'charset': 'utf8mb4',
-#             'sql_mode': 'traditional',
-#         },
-#     }
-# }
 
 
 DATABASES = {
