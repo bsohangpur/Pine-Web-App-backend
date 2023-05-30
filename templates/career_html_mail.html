@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Email Template</title>
+
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .head img{
+            width: 100px;
+        }
+
+        .head h1{
+            font-weight: bold;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .field-label {
+            font-weight: bold;
+        }
+
+        .field-value {
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="head">
+            <img src="../static/images/pine_logo.png" alt="">
+            <h1> New Career Form Submission</h1>
+        </div>
+
+        <div class="main">
+        <p class="field-label">First Name: <span class="field-value">{{ name }}</span></p>
+
+        <p class="field-label">Last Name: <span class="field-value">{{ phone }}</span></p>
+
+        <p class="field-label">Date of Birth: <span class="field-value">{{ email }}</span></p>
+
+        <p class="field-label">Gender: <span class="field-value">{{ message }}</span></p>
+
+        </div>
+    </div>
+</body>
+</html>

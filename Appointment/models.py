@@ -14,3 +14,6 @@ class Appointment(models.Model):
     procedure = models.CharField(max_length=255)
     date = models.DateField()
     time = models.TimeField()
+
+    def __str__(self):
+        return f"{self.first_name}  {self.last_name}"
